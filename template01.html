@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        [class$="container"] {
+            display: flex;
+            width: 100px;
+            height: 100px;
+            border-radius: 10%;
+            box-shadow: inset 0 5px white,
+            inset 0 -5px #bbb,
+            inset 5px 0 #d7d7d7,
+            inset -5px 0 #d7d7d7;
+            background: #e7e7e7;
+            object-fit: contain;
+            margin: 16px;
+            padding: 4px;
+        }
+
+        .item {
+            display: block;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin: 4px;
+            background: #333;
+            box-shadow: inset 0 3px #111, inset 0 -3px #555;
+        }
+
+        .first-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .second-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .second-container span:nth-of-type(2) {
+            align-self: flex-end;
+        }
+
+        .third-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .third-container span:nth-of-type(2) {
+            align-self: center;
+        }
+
+        .third-container span:nth-of-type(3) {
+            align-self: flex-end;
+        }
+
+        .fourth-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .fourth-container .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .fifth-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .fifth-container .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .fifth-container div:nth-of-type(2) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .sixth-container {
+            display:flex;
+            justify-content:space-between;
+        }
+        .sixth-container .column {
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first-container">
+        <span class="item"></span>
+    </div>
+
+    <div class="second-container">
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+
+    <div class="third-container">
+        <span class="item"></span>
+        <span class="item"></span>
+        <span class="item"></span>
+    </div>
+
+    <div class="fourth-container">
+        <div class="column">
+            <span class="item"></span>
+            <span class="item"></span>
+        </div>
+        <div class="column">
+            <span class="item"></span>
+            <span class="item"></span>
+        </div>
+    </div>
+
+    <div class="fifth-container">
+        <div class="column">
+            <span class="item"></span>
+            <span class="item"></span>
+        </div>
+        <div class="column">
+            <span class="item"></span>
+        </div>
+        <div class="column">
+            <span class="item"></span>
+            <span class="item"></span>
+        </div>
+    </div>
+
+    <div class="sixth-container">
+        <div class="column">
+            <span class="item"></span>
+            <span class="item"></span>
+            <span class="item"></span>
+        </div>
+        <div class="column">
+            <span class="item"></span>
+            <span class="item"></span>
+            <span class="item"></span>
+        </div>
+    </div>
+
+</body>
+
+</html>

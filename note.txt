@@ -1,0 +1,24 @@
+1.Flex项目是沿着main axis(从main-start向main-end)或者cross axis(从cross-start向cross-end)排列.
+
+    main axis:Flex容器的主轴主要用来配置Flex项目。注意，它不一定是水平，这主要取决于flex-direction属性。
+    main-start | main-end:Flex项目的配置从容器的主轴起点边开始，往主轴终点边结束。
+    main size:Flex项目的在主轴方向的宽度或高度就是项目的主轴长度，Flex项目的主轴长度属性是width或height属性，由哪一个对着主轴方向决定。
+
+
+container :
+    以下6个属性设置在容器上:
+    flex-direction
+    flex-wrap
+    flex-flow
+    justify-content
+    align-items
+    align-content 
+
+item:
+    以下6个属性设置在项目上:
+    order
+    flex-grow
+    flex-shrink
+    flex-basis
+    flex
+    align-self    
